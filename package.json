@@ -1,0 +1,32 @@
+{
+  "name": "tdd_react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --compilers js:babel-register --require ./test/test_helpers.js --recursive",
+    "test:watch": "npm test -- --watch",
+    "build": "webpack",
+    "dev": "webpack-dev-server --port 3000 --devtool eval --progress --colors --hot --content-base dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.9.0",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-register": "^6.9.0",
+    "chai": "^3.5.0",
+    "enzyme": "^1.2.0",
+    "mocha": "^2.5.3",
+    "react-addons-test-utils": "^15.1.0",
+    "sinon": "^1.17.4",
+    "webpack": "^1.13.1"
+  },
+  "dependencies": {
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0"
+  }
+}
