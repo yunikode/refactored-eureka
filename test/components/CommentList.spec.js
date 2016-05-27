@@ -2,7 +2,7 @@ import React from 'react'
 
 // Once we set up Karma to run our tests through webpack
 // we will no longer need to have these long relative paths
-import CommentList from '../../src/components/CommentList'
+import CommentList from 'components/CommentList'
 import {
   describeWithDOM,
   mount,
